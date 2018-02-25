@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.mypc.orderfooddemo2.DangKyActivity"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng Ký"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:id="@+id/tvTieuDeDangKy" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/edTenDangNhapDK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tendangnhapp"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="10dp"
+            />
+
+        <EditText
+            android:id="@+id/edMatKhauDK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"/>
+
+        <RadioGroup
+            android:id="@+id/rgGioiTinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RadioButton
+                android:id="@+id/rdNam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Nam"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/rdNu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Nữ"
+                android:layout_weight="1"
+                android:textSize="20dp"/>
+
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edNgaySinhDK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ngày sinh"
+            android:padding="10dp"
+            android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+            android:drawablePadding="10dp"
+            />
+
+        <EditText
+            android:id="@+id/edCMNDDK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CMND"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/idcard"
+            android:drawablePadding="10dp"
+            android:inputType="number"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDongYDK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đồng Ý"
+                android:layout_weight="1"
+                android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/btnThoatDK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thoát"
+                android:layout_weight="1"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

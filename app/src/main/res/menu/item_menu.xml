@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/itThemBanAn"
+            android:title="Thêm bàn ăn"></item>
+
+        <item
+            android:id="@+id/itXoaCSDL"
+            android:title="Xoá CSDL"></item>
+    </group>
+
+</menu>

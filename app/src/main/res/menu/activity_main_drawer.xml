@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+
+            android:icon="@drawable/trangchu"
+            android:title="Trang chủ"
+
+            android:id="@+id/itTrangChu"/>
+
+        <item
+            android:icon="@drawable/logodangnhap"
+            android:title="Thực đơn"
+            android:id="@+id/itThucDon" />
+
+        <item
+            android:icon="@drawable/nhanvien"
+            android:title="Nhân viên"
+            android:id="@+id/itNhanVien" />
+
+        <item
+            android:icon="@drawable/thongke"
+            android:title="Thống kê" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:icon="@drawable/caidat"
+                android:title="Cài đặt" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
